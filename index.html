@@ -1,2 +1,51 @@
-<h1>Hello welcome to my website</h1>
-<p>It is so good.</p>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: "comic sans ms";
+        line-height: 180%;
+        max-width: 700px;
+        margin: 60px auto;
+        background-color: #114488;
+        color: #eeeeee;
+      }
+
+      h1 {
+        font-family: serif;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 500px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My Website</h1>
+    <p>Can you please change the color theme of the website to pink and purple? Needs to be sleeker can you make the logo bigger? Yes, bigger still. The logo is too big. Oh and please put pictures of cats everywhere can you help me out? Can you make it pop we are a startup. What you've given us is texty, we want sexy. Thanks for taking the time to make the website, but I already made it in Wix.</p>
+    <p>Let's not solutionize this right now cross functional teams enable out of the box brainstorming. Optimize organic growth corporate synergy it's important for every member to be involved and invested in our company and this is one way to do so strategic high-level 30,000 ft view. I just wanted to give you a heads-up to touch base and gain alignment. Optics looks great, we should leverage existing assets that ladder up to the message. Open door policy close the loop.</p>
+    <img src="andy.png">
+
+    <script>
+      images = ['andy.png', 'michael.jpg', 'jim-pam.jpg', 'dwight.jpeg']
+      //           0               1             2            3
+      counter = 0
+
+      nextSlide = function () {
+        counter = counter + 1
+        if (counter === 4) { counter = 0 }
+        document.querySelector('img').src = images[counter]
+      }
+
+      setInterval(nextSlide, 3000)
+    </script>
+  </body>
+
+</html>
